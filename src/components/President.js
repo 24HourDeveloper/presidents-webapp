@@ -25,13 +25,13 @@ export default function President({restData}){
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={data.imgUrl}
+            image={data.img_url}
             title="Contemplative Reptile"
             src="img"
           />
           <CardContent className={classes.details}>
             <Typography gutterBottom variant="h5" component="h2">
-              {data.name}
+              {data.first_name} {data.last_name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               Height: {data.height}
@@ -40,13 +40,10 @@ export default function President({restData}){
               Date of Birth: {data.dob}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Birth Place: {data.birthPlace}
+              Birth Place: {data.birth_place}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Died: {data.died}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Term: {data.term}
+              Died: {data.dod}
             </Typography>
           </CardContent>
         </CardActionArea>
